@@ -33,7 +33,8 @@ namespace Assignment_2
             chart1.Series.Clear();
         }
 
-        private void calculateVelocity()// the calculation to workout velocity
+        private void calculateVelocity()
+        // the calculation to workout velocity
         {
             for (int i = 1; i < table.Count; i++)
             {
@@ -43,7 +44,8 @@ namespace Assignment_2
             }
         }
 
-        private void calculateAcceleration()// the calculation on how to workout acceleration
+        private void calculateAcceleration()
+        // the calculation on how to workout acceleration
         {
             for (int i = 2; i < table.Count; i++)
             {
@@ -52,7 +54,8 @@ namespace Assignment_2
                 table[i].acceleration = dI / dt;
             }
         }
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)//this is to get the open file working on the menu strip, this allows the files to be opened.
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        //this is to get the open file working on the menu strip, this allows the files to be opened.
         {
             openFileDialog1.FileName = "";
             openFileDialog1.Filter = "csv Files|*.csv";
@@ -99,7 +102,8 @@ namespace Assignment_2
             }
         }
 
-        private void velocityToolStripMenuItem_Click(object sender, EventArgs e)//this code works out the velocity and displays it as a graph
+        private void velocityToolStripMenuItem_Click(object sender, EventArgs e)
+        //this code works out the velocity and displays it as a graph
         {
             chart1.Series.Clear();
             chart1.ChartAreas[0].AxisX.IsMarginVisible = false;
@@ -122,7 +126,8 @@ namespace Assignment_2
             chart1.ChartAreas[0].RecalculateAxesScale();
         }
 
-        private void altitudeToolStripMenuItem_Click(object sender, EventArgs e)// this works out the altidude and displays it in a graph
+        private void altitudeToolStripMenuItem_Click(object sender, EventArgs e)
+        // this works out the altidude and displays it in a graph
         {
             {
                 chart1.Series.Clear();
@@ -147,7 +152,8 @@ namespace Assignment_2
             }
         }
 
-        private void rateOfChangeOfVelocityToolStripMenuItem_Click(object sender, EventArgs e) // This calculates the Rate of chnage of Velocity and displays it in a graph.
+        private void rateOfChangeOfVelocityToolStripMenuItem_Click(object sender, EventArgs e) 
+        // This calculates the Rate of chnage of Velocity and displays it in a graph.
 
         {
             {
@@ -173,7 +179,8 @@ namespace Assignment_2
             }
         }
 
-        private void saveCSVToolStripMenuItem_Click(object sender, EventArgs e)// this is how to save the CSV files
+        private void saveCSVToolStripMenuItem_Click(object sender, EventArgs e)
+        // this is how to save the CSV files
         {
             saveFileDialog1.FileName = "";
             saveFileDialog1.Filter = "csv Files|*.csv";
@@ -198,7 +205,8 @@ namespace Assignment_2
             }
         }
 
-        private void savePNGToolStripMenuItem_Click(object sender, EventArgs e)// this is the code on how to save png files
+        private void savePNGToolStripMenuItem_Click(object sender, EventArgs e)
+        // this is the code on how to save png files
         {
             {
                 saveFileDialog1.FileName = "";
